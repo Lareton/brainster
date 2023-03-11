@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<a href="#"> </a>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item"> <a class="header__link" href="#slogan" >о нас</a></li>
+					<li class="header__item"><a class="header__link" href="#features">преимущества</a></li>
+					<li class="header__item"><a class="header__link" href="#programs">устройство</a></li>
+					<li class="header__item"><a class="header__link" href="#">FAQ</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<img id="background_image" src="./background_high.jpg" class="img">
+
+	<div class="main">
+		<div class="slogan_and_title">
+			<h2>
+				<b>Brainster — </b><br>
+				платформа для подготовки к экзаменам с<br>
+				использованием искусственного интеллекта
+			</h2>
+		</div>
+
+		<h1 class="title" style="text-align: center">МЫ ДЕЛАЕМ ПОДГОТОВКУ К ЭКЗАМЕНАМ...</h1>
+
+		<div class="features" id="features">
+			<div class="features__row">
+				<div class="column">
+					<div class="features__row">
+						<img src="icons/icon_1.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">эффективной</h1>
+							<h3>Brainster персонализирует
+								Вашу траекторию подготовки <br></h3>
+						</div>
+					</div>
+
+					<div class="features__row">
+						<img src="icons/icon_5.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">доступной</h1>
+							<h3>Ученик из любой точки России
+								может готовиться совершенно бесплатно </h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="features__row">
+						<img src="icons/icon_2.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">осознанной</h1>
+							<h3>Вы можете отслеживать свои успехи
+								и делиться ими с друзьями </h3>
+						</div>
+					</div>
+
+					<div class="features__row">
+						<img src="icons/icon_6.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">удобной</h1>
+							<h3> Проще один раз увидеть, чем сто раз услышать) </h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="features__row">
+						<img src="icons/icon_4.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">инновационной</h1>
+							<h3>Brainster использует передовые решения в области AI и ML <br></h3>
+						</div>
+					</div>
+
+					<div class="features__row">
+						<img src="icons/icon_7.png" class="icon">
+						<div class="features__point">
+							<h1 class="features__title">мобильной</h1>
+							<h3>Нашими сервисами можно воспользоваться в любом месте, где есть интернет.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="point features__row">
+
+
+
+		</div>
+		</div>
+
+		<h1 id="programs" class="title">НАША ПЛАТФОРМА СОСОТОИТ ИЗ...</h1>
+
+		<div id="canvas-wrap" >
+			<canvas id="graph" ></canvas>
+
+			<div id="overlay">
+				<div class="card">
+					<div class="front">
+						<h1 class="card_title">Анализ заданий</h1>
+					</div>
+					<div class="back">
+						Для того чтобы делать релевантные рекомендации платформа должна понимать специфику задачи: <br>
+						<li> теоретические темы </li>
+						<li> сложность для декомпозиции </li>
+						<li> соотношение условия — решение (недостаточность/избыточность для решения)</li>
+						Для этого мы выделяем явные и неявные признаки (эмбеддинги)
+						<br> <br>
+						<b>стек используемых технологий:</b>
+						<li>clustering</li>
+						<li>tf-idf metric</li>
+						<li>nlp models (e.g. Bert)</li>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<h1 class="card_title">Рекомендация заданий</h1>
+					</div>
+					<div class="back">
+						Спецификой задачи рекомендации заданий для решения является то, что мы не можем использовать
+						неперсональные рекомендации - они будут просто бесполезны.
+						<br> <br>
+						<b>применяемые технологии рекомендательных систем:</b>
+						<li>content based</li>
+						<li>collaborative filtering</li>
+						<li>graph based</li>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
+						<h1 class="card_title">Eye tracking</h1>
+					</div>
+					<div class="back">
+						Наша платформа <b>первой в мире</b> использует технологию отслеживания
+						взгляда с помощью веб камерыы. <br>
+						Эта информация используется
+						для продвинутой рекомендации и подсчета метрик.
+						<br> <br>
+						<b>применяемые технологии:</b>
+						<li>face detection</li>
+						<li>CNN models</li>
+						<li>few-shot learning</li>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="test"></div>
+	</div>
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
