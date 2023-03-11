@@ -98,6 +98,10 @@ ul{
     text-align: center;
 }
 
+#results_testing, #results_arch{
+    text-align: center;
+}
+
 .features{
     background-color: #4D4DFF;
     margin: 1em;
@@ -341,4 +345,19 @@ ul{
     .card{
         font-size: 0.9em;
     }
+}
+
+#plt_image{
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    max-width: 100em;
+
+}
+
+#loss_plt_image{
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    max-width: 70em;
 }
